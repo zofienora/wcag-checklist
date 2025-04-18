@@ -1,3 +1,11 @@
+:root {
+  --background-color: #F8F9FA;
+  --text-color: #212529;
+  --pri-font: "Poppins", sans-serif;
+  --sec-font: "Inter", sans-serif;
+
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -9,6 +17,8 @@ html {
 body {
   margin: 0;
   padding:0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 img {
