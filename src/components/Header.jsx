@@ -3,7 +3,9 @@
 function Header() {
   return (
     <header className="header">
-      <h1>Accessibility Checklist</h1>
+        <div className="container">
+            <h1>Accessibility Checklist</h1>
+        </div>
     </header>
   );
 }

@@ -30,3 +30,9 @@ h1 {
   font-size: 2rem;
   margin-top: 0;
 }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
