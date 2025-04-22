@@ -1,4 +1,17 @@
+import React, {useState} from 'react'
+
+
+
 function Structure() {
+    const [state,setState]=useState(false);
+    console.log(state);
+    const changeState=()=>{
+        setState(!state);
+    }
+
+
+
+
     return(
         <>
         <section className="structure">
@@ -10,8 +23,9 @@ function Structure() {
                     <div className="content">
                         <input className="checkbox" type="checkbox" id="checkbox" name="Dobe" />
                         <p>Semantic HTML</p>
-                        <button>+</button>
+                        <button onClick={changeState}>+</button>
                     </div>  
+                    {state ?
                     <div className="toggle-content">
                         <p>Use HTML elements according to their intended purpose to give meaning to your content.
                         </p>
@@ -25,6 +39,7 @@ function Structure() {
                         <p>Screen readers and other assistive tools rely on semantics to interpret page structure and provide meaningful navigation to users.
                         </p>
                     </div>
+                    : null}
                 </div>
             </div>
         </section>
