@@ -3,14 +3,11 @@ import React, {useState} from 'react'
 
 
 function Structure() {
-    const [state,setState]=useState(false);
-    console.log(state);
-    const changeState=()=>{
-        setState(!state);
-    }
+    const [isOpen, setIsOpen] = useState(false);
 
-
-
+    const toggleContent = () => {
+        setIsOpen(!isOpen);
+    };
 
     return(
         <>
@@ -20,13 +17,32 @@ function Structure() {
                     <div className="head">
                         <h2>Structure & Navigation</h2>
                     </div>
+
                     <div className="content">
-                        <input className="checkbox" type="checkbox" id="checkbox" name="Dobe" />
+                        <input
+                            className="checkbox"
+                            type="checkbox"
+                            id="checkbox"
+                            name="semantic-html"
+                        />                        
                         <p>Semantic HTML</p>
-                        <button onClick={changeState}>+</button>
+                        <button
+                            className="toggle-btn"
+                            onClick={toggleContent}
+                            aria-expanded={isOpen}
+                            aria-controls="toggle-content"
+                        >
+                            {isOpen ? '−' : '+'}
+                        </button>
                     </div>  
-                    {state ?
-                    <div className="toggle-content">
+
+                    {isOpen && (
+                    <div 
+                        id="toggle-content"
+                        className="toggle-content"
+                        role="region"
+                        aria-labelledby="checkbox"
+                    >
                         <p>Use HTML elements according to their intended purpose to give meaning to your content.
                         </p>
                         <p><strong>Examples:</strong></p>
@@ -39,7 +55,7 @@ function Structure() {
                         <p>Screen readers and other assistive tools rely on semantics to interpret page structure and provide meaningful navigation to users.
                         </p>
                     </div>
-                    : null}
+                    )}
                 </div>
             </div>
         </section>
