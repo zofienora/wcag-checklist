@@ -9,11 +9,19 @@ function Structure() {
 
     return(
         <>
-            <Semantics />
-            <Headings />
-            <Keyboard />
-            <Links />
-            <Tabbing />
+        <div className="container">
+                <div className="container__structure">
+                    <div className="head">
+                        <h2>Structure & Navigation</h2>
+                    </div>
+                </div>
+        </div>
+        <Semantics />
+        <Headings />
+        <Keyboard />
+        <Links />
+        <Tabbing />
+            
         </>
     )
 }

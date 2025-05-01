@@ -11,11 +11,6 @@ function Semantics() {
         <>
          <section className="structure">
             <div className="container">
-                <div className="container__structure">
-                    <div className="head">
-                        <h2>Structure & Navigation</h2>
-                    </div>
-
                     <div className="content">
                         <input
                             className="checkbox"
@@ -55,7 +50,6 @@ function Semantics() {
                     </div>
                     )}
                 </div>
-            </div>
         </section>
 
         </>
