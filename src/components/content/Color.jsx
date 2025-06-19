@@ -18,7 +18,7 @@ function Color() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Landmarks</p>
+                        <p>Color Contrast</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -36,15 +36,13 @@ function Color() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Use HTML5 landmarks to define regions of the page for easier navigation by assistive technologies.</p>
+                        <p>Ensure that text and key visual elements have enough contrast against their background.</p>
                         <ul>
-                            <li>&lt;header&gt;: Introductory content or navigation  </li>
-                            <li>&lt;nav&gt;: Main navigation  </li>
-                            <li>&lt;main&gt;: Core content of the document  </li>
-                            <li>&lt;aside&gt;: Complementary content  </li>
-                            <li>&lt;footer&gt;: Footer information  </li>
+                            <li>Use a contrast ratio of at least 4.5:1 for normal text.</li>
+                            <li>Use at least 3:1 for large text (18pt+, or bold 14pt+).</li>
+                            <li>Test contrast with tools like WebAIM Contrast Checker.</li>
                         </ul>
-                        <p>Screen readers let users jump between landmarks, making navigation much more efficient.</p>
+                        <p>People with low vision or color blindness need strong contrast to read and understand content clearly.</p>
                     </div>
                     )}
                 </div>
