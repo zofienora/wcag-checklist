@@ -18,7 +18,7 @@ function Landmark() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Keyboard Navigation</p>
+                        <p>Landmarks</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -36,14 +36,15 @@ function Landmark() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>All interactive elements must be operable using a keyboard (Tab, Enter, Space, Arrow keys, etc.).</p>
+                        <p>Use HTML5 landmarks to define regions of the page for easier navigation by assistive technologies.</p>
                         <ul>
-                            <li>Users should be able to Tab through links, buttons, inputs, and custom components.</li>
-                            <li>Use <code>:focus</code> styles to indicate which element is active.</li>
-                            <li>Avoid disabling focus or hiding keyboard navigation with CSS.</li>
+                            <li>&lt;header&gt;: Introductory content or navigation  </li>
+                            <li>&lt;nav&gt;: Main navigation  </li>
+                            <li>&lt;main&gt;: Core content of the document  </li>
+                            <li>&lt;aside&gt;: Complementary content  </li>
+                            <li>&lt;footer&gt;: Footer information  </li>
                         </ul>
-                        <p><strong>Why it matters:</strong></p>
-                        <p>Many users — including those with mobility or vision impairments — rely on the keyboard to navigate websites.</p>
+                        <p>Screen readers let users jump between landmarks, making navigation much more efficient.</p>
                     </div>
                     )}
                 </div>
