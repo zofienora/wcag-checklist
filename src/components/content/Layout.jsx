@@ -18,7 +18,7 @@ function Layout() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Landmarks</p>
+                        <p>Scalable Text and Responsive Layout</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -36,15 +36,13 @@ function Layout() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Use HTML5 landmarks to define regions of the page for easier navigation by assistive technologies.</p>
+                        <p>Design your site to support zooming, text resizing, and mobile-friendly layouts.</p>
                         <ul>
-                            <li>&lt;header&gt;: Introductory content or navigation  </li>
-                            <li>&lt;nav&gt;: Main navigation  </li>
-                            <li>&lt;main&gt;: Core content of the document  </li>
-                            <li>&lt;aside&gt;: Complementary content  </li>
-                            <li>&lt;footer&gt;: Footer information  </li>
+                            <li>Make sure users can zoom up to 200% without breaking the layout.</li>
+                            <li>Use relative units (em, rem, %) instead of fixed px for text and containers.</li>
+                            <li>Avoid horizontal scrolling and ensure layout adapts to screen sizes.</li>
                         </ul>
-                        <p>Screen readers let users jump between landmarks, making navigation much more efficient.</p>
+                        <p>Users with visual impairments or on mobile devices need flexible layouts and scalable text for comfortable reading.</p>
                     </div>
                     )}
                 </div>
