@@ -18,7 +18,7 @@ function Video() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Landmarks</p>
+                        <p>Video Captions / Audio Transcripts</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -36,13 +36,12 @@ function Video() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Use HTML5 landmarks to define regions of the page for easier navigation by assistive technologies.</p>
+                        <p>Provide captions and transcripts for all media so users with hearing impairments can access the information.</p>
                         <ul>
-                            <li>&lt;header&gt;: Introductory content or navigation  </li>
-                            <li>&lt;nav&gt;: Main navigation  </li>
-                            <li>&lt;main&gt;: Core content of the document  </li>
-                            <li>&lt;aside&gt;: Complementary content  </li>
-                            <li>&lt;footer&gt;: Footer information  </li>
+                            <li>Use closed captions for videos.</li>
+                            <li>Provide written transcripts for audio content.</li>
+                            <li>For complex visuals, offer audio descriptions of the visual information.</li>
+                            <li>People who are deaf or hard of hearing need equivalent alternatives to audio content.</li>
                         </ul>
                         <p>Screen readers let users jump between landmarks, making navigation much more efficient.</p>
                     </div>
