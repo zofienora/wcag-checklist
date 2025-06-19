@@ -13,6 +13,7 @@ function Content() {
                     <div className="container__structure">
                         <div className="head">
                             <h2>Perceivable Content (Text, Color, Media)</h2>
+                            <p>This covers: color contrast, alt text, captions, color usage, font readability, and responsive layout.</p>
                         </div>
                     </div>
             </div>
