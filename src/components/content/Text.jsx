@@ -18,7 +18,7 @@ function Text() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Landmarks</p>
+                        <p>Alt Text for Images</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -36,15 +36,14 @@ function Text() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Use HTML5 landmarks to define regions of the page for easier navigation by assistive technologies.</p>
+                        <p>All meaningful images must have descriptive alt attributes so screen readers can describe them to users.</p>
                         <ul>
-                            <li>&lt;header&gt;: Introductory content or navigation  </li>
-                            <li>&lt;nav&gt;: Main navigation  </li>
-                            <li>&lt;main&gt;: Core content of the document  </li>
-                            <li>&lt;aside&gt;: Complementary content  </li>
-                            <li>&lt;footer&gt;: Footer information  </li>
+                            <li>Describe the purpose or content of the image clearly and briefly.</li>
+                            <li>Use alt="" for decorative images, or hide them from assistive tech with aria-hidden="true".</li>
+                            <li>Any icons with functional meaning (like a warning or success icon) must be labeled.</li>
+                          
                         </ul>
-                        <p>Screen readers let users jump between landmarks, making navigation much more efficient.</p>
+                        <p>Screen reader users rely on alt text to understand visual content that they cannot see.</p>
                     </div>
                     )}
                 </div>
