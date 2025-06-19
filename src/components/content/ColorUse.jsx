@@ -18,7 +18,7 @@ function ColorUse() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Landmarks</p>
+                        <p>Meaningful Use of Color</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -36,15 +36,14 @@ function ColorUse() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Use HTML5 landmarks to define regions of the page for easier navigation by assistive technologies.</p>
+                        <p>Never rely on color alone to communicate information (e.g., “click the red button”).</p>
                         <ul>
-                            <li>&lt;header&gt;: Introductory content or navigation  </li>
-                            <li>&lt;nav&gt;: Main navigation  </li>
-                            <li>&lt;main&gt;: Core content of the document  </li>
-                            <li>&lt;aside&gt;: Complementary content  </li>
-                            <li>&lt;footer&gt;: Footer information  </li>
+                            <li>Always combine color with text, icons, or patterns.</li>
+                            <li>Avoid instructions like “select the green option” unless backed with a label or icon.</li>
+                            <li>Use colorblind-friendly palettes when possible.</li>
+  
                         </ul>
-                        <p>Screen readers let users jump between landmarks, making navigation much more efficient.</p>
+                        <p>Users with color vision deficiency may not perceive color differences and miss important cues.</p>
                     </div>
                     )}
                 </div>
