@@ -18,7 +18,7 @@ function Font() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Landmarks</p>
+                        <p>Font Readability</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -36,15 +36,13 @@ function Font() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Use HTML5 landmarks to define regions of the page for easier navigation by assistive technologies.</p>
+                        <p>Use fonts that are legible and easy to read, especially at smaller sizes.</p>
                         <ul>
-                            <li>&lt;header&gt;: Introductory content or navigation  </li>
-                            <li>&lt;nav&gt;: Main navigation  </li>
-                            <li>&lt;main&gt;: Core content of the document  </li>
-                            <li>&lt;aside&gt;: Complementary content  </li>
-                            <li>&lt;footer&gt;: Footer information  </li>
+                            <li>Use a clear, sans-serif font for body text.</li>
+                            <li>Avoid decorative or script fonts for large amounts of content.</li>
+                            <li>Maintain consistent line height (typically 1.5x font size) and spacing.</li>
                         </ul>
-                        <p>Screen readers let users jump between landmarks, making navigation much more efficient.</p>
+                        <p>Good typography improves readability for users with cognitive or visual impairments.</p>
                     </div>
                     )}
                 </div>
