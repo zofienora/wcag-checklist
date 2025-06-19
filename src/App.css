@@ -6,15 +6,22 @@
   justify-content: space-between;
   align-items: left;
   margin: 0 0 0rem 0;
-  border: 2px solid red;
+/*   border: 2px solid red;
+ */}
+
+
+.toggle-btn {
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: aliceblue;
+  color:blue
 }
 
-.plus:active {
-  transform: rotate(90deg);
+.toggle-btn:active {
   transition: transform 0.2s ease-in-out;
 }
 
-.plus:hover {
+.toggle-btn:hover {
   cursor: pointer;
 }
 
@@ -28,8 +35,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 0 0rem 0;
-  border: 2px solid yellow;
-}
+/*   border: 2px solid yellow;
+ */}
 .checkbox input {
   position: absolute;
   opacity: 0;
