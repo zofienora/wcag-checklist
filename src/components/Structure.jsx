@@ -3,6 +3,7 @@ import Headings from './structure/Headings';
 import Keyboard from './structure/Keyboard';
 import Links from './structure/Links';
 import Tabbing from './structure/Tabbing';
+import Landmark from './structure/Landmarks';
 
 
 function Structure() {
@@ -21,6 +22,7 @@ function Structure() {
         <Keyboard />
         <Links />
         <Tabbing />
+        <Landmark />
             
         </>
     )
