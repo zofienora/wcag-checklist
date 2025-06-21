@@ -1,3 +1,6 @@
+import Labels from "./interactions/Labels";
+
+
 function Interactions() {
     return(
         <>
@@ -9,6 +12,7 @@ function Interactions() {
                     </div>
                 </div>
             </div>
+            <Labels />
         </>
     )
 }

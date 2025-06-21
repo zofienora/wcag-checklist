@@ -19,7 +19,7 @@ function Labels() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Headings</p>
+                        <p>Form Labels and Instructions</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function Labels() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) should follow a logical and hierarchical structure, reflecting the content outline of the page.</p>
-                        <p><strong>Examples:</strong></p>
+                        <p>Every form input must have a clear and properly associated label.</p>
+                        <p><strong>Details:</strong></p>
                         <ul>
-                            <li>Use only one <code>&lt;h1&gt;</code> per page (usually the page title).</li>
-                            <li>Nest subsections correctly: <code>&lt;h2&gt;</code> &gt; <code>&lt;h3&gt;</code> &gt; <code>&lt;h4&gt;</code>, without skipping levels.</li>
-                            <li>Don’t use headings for styling only — they should represent content structure.</li>
+                            <li>Use the <code>&lt;label&gt;</code> element and associate it with an input via the for attribute (htmlFor in React).</li>
+                            <li>Place instructions near the fields they relate to.</li>
+                            <li>Don’t rely on placeholder text as a substitute for labels — placeholders disappear when the user types.</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        <p>Screen readers use headings to create an outline. A logical order improves comprehension and allows users to jump to relevant sections quickly.</p>
+                        <p>Screen readers need labels to describe the purpose of inputs. Clear labels reduce errors and confusion for all users.</p>
                     </div>
                     )}
                 </div>
