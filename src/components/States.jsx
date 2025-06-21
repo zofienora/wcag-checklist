@@ -1,5 +1,6 @@
 import Messages from "./states/Messages";
 import DynamicUpdates from "./states/DynamicUpdates";
+import ConfirmationMessages from "./states/ConfirmationMessages";
 
 function States() {
     return (
@@ -14,6 +15,7 @@ function States() {
         </div>
         <Messages />
         <DynamicUpdates />
+        <ConfirmationMessages />
 
         </>
     )
