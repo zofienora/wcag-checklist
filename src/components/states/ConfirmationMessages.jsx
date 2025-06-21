@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 
 
-function Messages() {
+function ConfirmationMessages() {
     const [isOpen, setIsOpen] = useState(false);
     const toggleContent = () => {
         setIsOpen(!isOpen);
@@ -19,7 +19,7 @@ function Messages() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Grouping</p>
+                        <p>Confirmation Messages</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function Messages() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Related</p>
+                        <p>After successful actions (like submitting a form, saving changes, or completing a purchase), show clear confirmation that the action was completed.</p>
                         <p><strong>Details:</strong></p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Use a visible success message (e.g., “Your profile was updated successfully.”).</li>
+                            <li>Optionally, include an ARIA live region to announce the message.</li>
+                            <li>Keep messages specific to the user’s action and next steps, if needed.</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        p
+                        <p>Feedback reassures users that their action worked, preventing confusion or repeated attempts.</p>
                     </div>
                     )}
                 </div>
@@ -54,4 +54,4 @@ function Messages() {
     )
 };
 
-export default Messages;
+export default ConfirmationMessages;
