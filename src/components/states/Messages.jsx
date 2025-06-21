@@ -19,7 +19,7 @@ function Messages() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Grouping</p>
+                        <p>Real-Time Validation Messages</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function Messages() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Related</p>
+                        <p>Display helpful error or guidance messages as users interact with form fields, rather than only after submission.</p>
                         <p><strong>Details:</strong></p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Validate inputs as users type or leave a field (on blur).</li>
+                            <li>Place validation messages directly near the related input.</li>
+                            <li>Use clear, specific wording like “Password must be at least 8 characters” instead of just “Invalid input.”</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        p
+                        <p>Early feedback reduces confusion and helps users correct errors before form submission — especially important for users with cognitive or learning disabilities.</p>
                     </div>
                     )}
                 </div>
