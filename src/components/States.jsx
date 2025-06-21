@@ -1,3 +1,5 @@
+import Messages from "./states/Messages";
+
 function States() {
     return (
         <>
@@ -9,6 +11,8 @@ function States() {
                 </div>
             </div>
         </div>
+        <Messages />
+
         </>
     )
 }
