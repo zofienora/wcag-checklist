@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 
 
-function Messages() {
+function Announcements() {
     const [isOpen, setIsOpen] = useState(false);
     const toggleContent = () => {
         setIsOpen(!isOpen);
@@ -19,7 +19,7 @@ function Messages() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Grouping</p>
+                        <p>Announcements of Errors/Success States</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function Messages() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Related</p>
+                        <p>When the page updates due to errors or successful actions, the changes should be announced to assistive technologies.</p>
                         <p><strong>Details:</strong></p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Use ARIA live regions or <code>role="alert"</code> for error messages.</li>
+                            <li>Visually display messages near the affected fields.</li>
+                            <li>Ensure messages are readable by screen readers without needing extra keyboard navigation.</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        p
+                        <p>Users with disabilities need to be notified of errors or changes immediately and without having to search for them.</p>
                     </div>
                     )}
                 </div>
@@ -54,4 +54,4 @@ function Messages() {
     )
 };
 
-export default Messages;
+export default Announcements;

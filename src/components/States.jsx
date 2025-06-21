@@ -2,6 +2,7 @@ import Messages from "./states/Messages";
 import DynamicUpdates from "./states/DynamicUpdates";
 import ConfirmationMessages from "./states/ConfirmationMessages";
 import FocusHandlings from "./states/FocusHandlings";
+import Announcements from "./states/Announcements";
 
 function States() {
     return (
@@ -18,6 +19,7 @@ function States() {
         <DynamicUpdates />
         <ConfirmationMessages />
         <FocusHandlings />
+        <Announcements />
 
         </>
     )
