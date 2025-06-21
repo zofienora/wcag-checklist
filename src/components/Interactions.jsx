@@ -2,6 +2,7 @@ import Labels from "./interactions/Labels";
 import Grouping from "./interactions/Grouping";
 import Inputs from "./interactions/Inputs";
 import Descriptive from "./interactions/Descriptive";
+import Validation from "./interactions/Validation";
 
 
 function Interactions() {
@@ -19,6 +20,7 @@ function Interactions() {
             <Grouping />
             <Inputs />
             <Descriptive />
+            <Validation />
         </>
     )
 }
