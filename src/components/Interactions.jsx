@@ -1,5 +1,6 @@
 import Labels from "./interactions/Labels";
 import Grouping from "./interactions/Grouping";
+import Inputs from "./interactions/Inputs";
 
 
 function Interactions() {
@@ -15,6 +16,7 @@ function Interactions() {
             </div>
             <Labels />
             <Grouping />
+            <Inputs />
         </>
     )
 }
