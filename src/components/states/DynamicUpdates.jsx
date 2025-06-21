@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 
 
-function Messages() {
+function DynamicUpdates() {
     const [isOpen, setIsOpen] = useState(false);
     const toggleContent = () => {
         setIsOpen(!isOpen);
@@ -19,7 +19,7 @@ function Messages() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Grouping</p>
+                        <p>ARIA Live Regions for Dynamic Updates</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function Messages() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>Related</p>
+                        <p>Use ARIA live regions to announce content changes that happen without a page reload (e.g., adding items to a cart, submitting a form).</p>
                         <p><strong>Details:</strong></p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Use <code>aria-live="polite"</code> or <code>aria-live="assertive"</code> on elements that update dynamically.</li>
+                            <li>Keep announcements short and meaningful.</li>
+                            <li>Do not use ARIA live regions for static content.</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        p
+                        <p>Screen reader users may miss dynamic updates if they are not programmatically announced.</p>
                     </div>
                     )}
                 </div>
@@ -54,4 +54,4 @@ function Messages() {
     )
 };
 
-export default Messages;
+export default DynamicUpdates;
