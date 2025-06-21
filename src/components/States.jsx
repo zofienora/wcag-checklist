@@ -1,4 +1,5 @@
 import Messages from "./states/Messages";
+import DynamicUpdates from "./states/DynamicUpdates";
 
 function States() {
     return (
@@ -12,6 +13,7 @@ function States() {
             </div>
         </div>
         <Messages />
+        <DynamicUpdates />
 
         </>
     )
