@@ -17,8 +17,22 @@
   justify-content: space-between;
   align-items: left;
   margin: 0 0 0rem 0;
-  border: 2px solid red;
+  padding-bottom: 0;
+/*   border: 2px solid red;
+ */}
+
+.head h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
 }
+
+.head p {
+  margin: 0rem 0;
+  padding-bottom: 0.5rem;;
+}
+
+
 
 
 .toggle-btn {
