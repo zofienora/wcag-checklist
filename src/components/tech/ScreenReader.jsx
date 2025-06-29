@@ -19,7 +19,7 @@ function ScreenReader() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Announcements of Errors/Success States</p>
+                        <p>Screen Reader Testing</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function ScreenReader() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>When the page updates due to errors or successful actions, the changes should be announced to assistive technologies.</p>
+                        <p>Test your site with screen readers to confirm that content is announced clearly and in the right order.</p>
                         <p><strong>Details:</strong></p>
                         <ul>
-                            <li>Use ARIA live regions or <code>role="alert"</code> for error messages.</li>
-                            <li>Visually display messages near the affected fields.</li>
-                            <li>Ensure messages are readable by screen readers without needing extra keyboard navigation.</li>
+                            <li>Use tools like NVDA (Windows), VoiceOver (macOS/iOS), or TalkBack (Android).</li>
+                            <li>Check that page structure, labels, buttons, and links are announced as expected.</li>
+                            <li>Navigate using keyboard alone to simulate screen reader interaction.</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        <p>Users with disabilities need to be notified of errors or changes immediately and without having to search for them.</p>
+                        <p>Assistive tech users rely on screen readers for access. Testing helps uncover issues you won’t see in visual QA.</p>
                     </div>
                     )}
                 </div>
