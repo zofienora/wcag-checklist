@@ -3,7 +3,7 @@ function Footer() {
         <>
             <footer>
                 <div className="container">
-                    <p></p>
+                    <p className="footer">Updates will be made occasionally — check back for improvements.</p>
                 </div>
             </footer>
         </>
