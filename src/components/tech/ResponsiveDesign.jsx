@@ -19,7 +19,7 @@ function ResponsiveDesign() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Announcements of Errors/Success States</p>
+                        <p>Responsive Design</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function ResponsiveDesign() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>When the page updates due to errors or successful actions, the changes should be announced to assistive technologies.</p>
+                        <p>Design your site to adapt to various screen sizes and orientations without breaking content or functionality.</p>
                         <p><strong>Details:</strong></p>
                         <ul>
-                            <li>Use ARIA live regions or <code>role="alert"</code> for error messages.</li>
-                            <li>Visually display messages near the affected fields.</li>
-                            <li>Ensure messages are readable by screen readers without needing extra keyboard navigation.</li>
+                            <li>Use flexible layouts with CSS Grid or Flexbox.</li>
+                            <li>Design mobile-first and scale up.</li>
+                            <li>Ensure tap targets are large enough and elements don’t overlap.</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        <p>Users with disabilities need to be notified of errors or changes immediately and without having to search for them.</p>
+                        <p>Mobile and tablet users — including those with motor or vision impairments — need layouts that are readable, usable, and not crowded.</p>
                     </div>
                     )}
                 </div>
