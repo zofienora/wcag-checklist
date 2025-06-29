@@ -19,7 +19,7 @@ function Support() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Announcements of Errors/Success States</p>
+                        <p>Support for Zooming (Up to 200%)</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function Support() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>When the page updates due to errors or successful actions, the changes should be announced to assistive technologies.</p>
+                        <p>Your content should remain fully usable and readable when a user zooms in up to 200% (a WCAG requirement).</p>
                         <p><strong>Details:</strong></p>
                         <ul>
-                            <li>Use ARIA live regions or <code>role="alert"</code> for error messages.</li>
-                            <li>Visually display messages near the affected fields.</li>
-                            <li>Ensure messages are readable by screen readers without needing extra keyboard navigation.</li>
+                            <li>Use relative units like em, rem, % for fonts and containers.</li>
+                            <li>Avoid fixed widths that prevent scaling.</li>
+                            <li>Don’t hide content or force horizontal scrolling when zoomed in.</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        <p>Users with disabilities need to be notified of errors or changes immediately and without having to search for them.</p>
+                        <p>Zoom helps users with low vision read and navigate content more comfortably. A layout that breaks on zoom becomes unusable.</p>
                     </div>
                     )}
                 </div>
