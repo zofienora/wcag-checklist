@@ -1,3 +1,10 @@
+import ScreenReader from './tech/ScreenReader';
+import AriaRoles from './tech/AriaRoles';
+import ResponsiveDesign from './tech/ResponsiveDesign';
+import Support from './tech/Support';
+import ReducedMotion from './tech/ReducedMotion';
+
+
 function Tech() {
     return(
         <>
@@ -9,6 +16,11 @@ function Tech() {
                     </div>
                 </div>
             </div>
+            <ScreenReader />
+            <AriaRoles />
+            <ResponsiveDesign />
+            <Support />
+            <ReducedMotion />
         </>
     )
 }
