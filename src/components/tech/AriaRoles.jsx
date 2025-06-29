@@ -19,7 +19,7 @@ function AriaRoles() {
                             id="checkbox"
                             name="semantic-html"
                         />                        
-                        <p>Announcements of Errors/Success States</p>
+                        <p>ARIA Roles and Attributes</p>
                         <button
                             className="toggle-btn"
                             onClick={toggleContent}
@@ -37,15 +37,15 @@ function AriaRoles() {
                         role="region"
                         aria-labelledby="checkbox"
                     >
-                        <p>When the page updates due to errors or successful actions, the changes should be announced to assistive technologies.</p>
+                        <p>Use ARIA (Accessible Rich Internet Applications) attributes to enhance accessibility when native HTML elements aren’t enough.</p>
                         <p><strong>Details:</strong></p>
                         <ul>
-                            <li>Use ARIA live regions or <code>role="alert"</code> for error messages.</li>
-                            <li>Visually display messages near the affected fields.</li>
-                            <li>Ensure messages are readable by screen readers without needing extra keyboard navigation.</li>
+                            <li>Use ARIA roles like <code>role="dialog"</code>, <code>role="alert"</code>, or <code>role="button"</code> for custom components.</li>
+                            <li>Use attributes like aria-label, aria-labelledby, aria-hidden, and aria-expanded to give context to screen readers.</li>
+                            <li>Only use ARIA when necessary — prefer native HTML wherever possible.</li>
                         </ul>
                         <p><strong>Why it matters:</strong></p>
-                        <p>Users with disabilities need to be notified of errors or changes immediately and without having to search for them.</p>
+                        <p>ARIA allows assistive technologies to understand the purpose and state of non-standard components (e.g., custom dropdowns or modals).</p>
                     </div>
                     )}
                 </div>
